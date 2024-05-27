@@ -72,7 +72,8 @@ class _HomePageState extends State<HomePage> {
                 count.toString(),
                 style: TextStyle(
                   fontSize: 100,
-                  color: isFull ? Color.fromARGB(255, 255, 17, 0) : Colors.white,
+                  color:
+                      isFull ? Color.fromARGB(255, 255, 17, 0) : Colors.white,
                   fontWeight: FontWeight.w800,
                 ),
               ),
@@ -83,11 +84,14 @@ class _HomePageState extends State<HomePage> {
                 TextButton(
                   onPressed: isEmpty ? null : decrement,
                   style: TextButton.styleFrom(
-                      backgroundColor: isEmpty ? Colors.white.withOpacity(0.5) : Colors.white,
-                      fixedSize: const Size(100, 100),
-                      foregroundColor: Colors.black,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(24))),
+                    backgroundColor:
+                        isEmpty ? Colors.white.withOpacity(0.5) : Colors.white,
+                    fixedSize: const Size(100, 100),
+                    foregroundColor: Colors.black,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                  ),
                   child: const Text(
                     'Saiu',
                     style: TextStyle(
@@ -100,7 +104,8 @@ class _HomePageState extends State<HomePage> {
                 TextButton(
                   onPressed: isFull ? null : increment,
                   style: TextButton.styleFrom(
-                      backgroundColor: isFull ? Colors.white.withOpacity(0.5) : Colors.white,
+                      backgroundColor:
+                          isFull ? Colors.white.withOpacity(0.5) : Colors.white,
                       fixedSize: const Size(100, 100),
                       foregroundColor: Colors.black,
                       shape: RoundedRectangleBorder(
